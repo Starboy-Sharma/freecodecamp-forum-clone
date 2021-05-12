@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #313146 !important;
+}
+
+.nav {
+  background: #0a0a23;
+}
+
+.nav .ant-col h1 {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: min(1.6rem, 38px);
+  font-family: "Newsreader", serif;
+}
