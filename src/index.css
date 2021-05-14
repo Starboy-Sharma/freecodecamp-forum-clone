@@ -22,3 +22,30 @@ body {
   font-size: min(1.6rem, 38px);
   font-family: "Newsreader", serif;
 }
+
+.container {
+  margin: 5vw;
+}
+
+.container .forum .ant-card-head {
+  border-bottom: 0px;
+  padding-left: 10px;
+}
+
+.container .forum .ant-card {
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.container .forum .ant-card-head .ant-card-head-title {
+  color: #dddee0;
+  font-size: 1.8rem;
+  padding: 0;
+}
+
+.forum .ant-card-body {
+  padding: 10px;
+  color: #dddee0;
+  font-size: 18px;
+  cursor: pointer;
+}
