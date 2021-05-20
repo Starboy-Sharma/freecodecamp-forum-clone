@@ -32,6 +32,10 @@ body {
   margin: 5vw;
 }
 
+.container .ant-col {
+  margin-bottom: 30px;
+}
+
 .container .forum .ant-card-head {
   border-bottom: 0px;
   padding-left: 10px;
@@ -53,4 +57,13 @@ body {
   color: #dddee0;
   font-size: 18px;
   cursor: pointer;
+}
+
+.btn {
+  border: 2px solid #dddee0;
+  margin-right: 12px;
+}
+
+.btn .btn-latest {
+  background-color: #eee !important;
 }

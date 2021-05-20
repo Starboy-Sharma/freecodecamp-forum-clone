@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useContext } from "react";
 
 import { useParams } from "react-router-dom";
+import { Button, Row, Col } from "antd";
+
+import { SubForumContext } from "../../contexts/SubForumContext";
 
 export default function Forum() {
+  const { id, forum } = useParams();
+  const [subForums, setSubForums] = useContext(SubForumContext);
 
-    const {id, forum } = useParams();
+  console.log(subForums);
 
-    console.log(id, forum)
-
-    return (
-        <h2>
-            Hello Forum
-        </h2>
-    )
+  return (
+    <Row className="container">
+      <Col span={24}>
+        <Button
+          size="large"
+          className="btn"
+          style={{ backgroundColor: "yellow" }}
+        >
+          {forum}
+        </Button>
+        <Button size="large" className="btn btn-latest">
+          Latest
+        </Button>
+        <Button size="large" className="btn btn-top">
+          Top
+        </Button>
+      </Col>
+    </Row>
+  );
 }
