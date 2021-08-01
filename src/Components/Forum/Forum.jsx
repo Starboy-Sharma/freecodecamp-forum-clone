@@ -9,6 +9,10 @@ export default function Forum() {
   const { id, forum } = useParams();
   const [subForums, setSubForums] = useContext(SubForumContext);
 
+  if (subForums.length === 0) {
+    console.log("Its time to get forum data");
+  }
+
   console.log(subForums);
 
   return (
